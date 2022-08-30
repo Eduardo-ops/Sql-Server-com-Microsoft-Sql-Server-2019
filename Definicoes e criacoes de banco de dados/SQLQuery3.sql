@@ -11,3 +11,13 @@ LOG ON (NAME = 'SUCOS_VENDAS.LOG', /* Especificando informações do arquivo de lo
 	SIZE = 10MB,
 	MAXSIZE = 50MB,
 	FILEGROWTH = 5MB);
+
+/* Deletando um banco de dados */
+DROP DATABASE SUCOS_VENDAS_04;
+
+/* Deletando vários banco de dados */
+DROP DATABASE SUCOS_VENDAS_03;
+DROP DATABASE SUCOS_VENDAS_02;
+DROP DATABASE SUCOS_VENDAS_01;
+
+CREATE DATABASE SUCOS_VENDAS;
