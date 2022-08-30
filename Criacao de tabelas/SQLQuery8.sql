@@ -34,3 +34,19 @@ CREATE TABLE [TABELA DE VENDEDORES](
 	[NOME] [VARCHAR] (100),
 	[PERCENTUAL COMISSAO] [FLOAT]
 );
+
+--Código do produto
+--Nome do produto
+--Embalagem
+--Tamanho
+--Sabor
+--preço de Lista
+
+CREATE TABLE [TABELA DE PRODUTOS](
+	[CODIGO DO PRODUTO] [INTEGER],
+	[NOME DO PRODUTO] [VARCHAR] (50),
+	[EMBALAGEM] [VARCHAR] (50),
+	[TAMANHO] [INTEGER],
+	[SABOR] [VARCHAR] (50),
+	[PRECO DE LISTA] [FLOAT]
+);
