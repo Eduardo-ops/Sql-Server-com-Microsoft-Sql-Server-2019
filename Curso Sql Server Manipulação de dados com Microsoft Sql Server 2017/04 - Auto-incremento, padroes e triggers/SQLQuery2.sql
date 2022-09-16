@@ -1,0 +1,16 @@
+
+CREATE TABLE TB_PADRAO(
+	ID INT IDENTITY(1,1) NOT NULL,
+	DESCRITOR VARCHAR(20) NULL,
+	ENDERECO VARCHAR(200) NULL,
+	CIDADE VARCHAR(50) DEFAULT 'Cidade não definida',
+	DATA_CRIACAO DATE DEFAULT GETDATE()
+)
+
+INSERT INTO TB_PADRAO(DESCRITOR, ENDERECO, CIDADE, DATA_CRIACAO)VALUES('Cliente X', 'Rua projetada A', 'São Paulo', '2022-09-15')
+
+INSERT INTO TB_PADRAO(DESCRITOR)VALUES('Cliente X')
+
+SELECT * FROM TB_PADRAO
+
+-- Pode-se desabilitar o recurso default com o comando ALTER TABLE, caso precise em algum momento do código
